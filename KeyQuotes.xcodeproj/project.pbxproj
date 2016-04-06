@@ -14,6 +14,8 @@
 		4C830A511CB5A796009C0C74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4C830A4F1CB5A796009C0C74 /* LaunchScreen.storyboard */; };
 		4C830A5C1CB5A796009C0C74 /* KeyQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C830A5B1CB5A796009C0C74 /* KeyQuotesTests.swift */; };
 		4C830A671CB5A797009C0C74 /* KeyQuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C830A661CB5A797009C0C74 /* KeyQuotesUITests.swift */; };
+		4C830A7B1CB5AACE009C0C74 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C830A7A1CB5AACE009C0C74 /* KeyboardViewController.swift */; };
+		4C830A7F1CB5AACE009C0C74 /* KeyQuotes Keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 4C830A781CB5AACE009C0C74 /* KeyQuotes Keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,28 @@
 			remoteGlobalIDString = 4C830A421CB5A796009C0C74;
 			remoteInfo = KeyQuotes;
 		};
+		4C830A7D1CB5AACE009C0C74 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4C830A3B1CB5A796009C0C74 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C830A771CB5AACE009C0C74;
+			remoteInfo = "KeyQuotes Keyboard";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		4C830A831CB5AACE009C0C74 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				4C830A7F1CB5AACE009C0C74 /* KeyQuotes Keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		4C830A431CB5A796009C0C74 /* KeyQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -47,6 +70,9 @@
 		4C830A621CB5A797009C0C74 /* KeyQuotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KeyQuotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C830A661CB5A797009C0C74 /* KeyQuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyQuotesUITests.swift; sourceTree = "<group>"; };
 		4C830A681CB5A797009C0C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4C830A781CB5AACE009C0C74 /* KeyQuotes Keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "KeyQuotes Keyboard.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C830A7A1CB5AACE009C0C74 /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		4C830A7C1CB5AACE009C0C74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +97,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C830A751CB5AACE009C0C74 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -80,6 +113,7 @@
 				4C830A451CB5A796009C0C74 /* KeyQuotes */,
 				4C830A5A1CB5A796009C0C74 /* KeyQuotesTests */,
 				4C830A651CB5A797009C0C74 /* KeyQuotesUITests */,
+				4C830A791CB5AACE009C0C74 /* KeyQuotes Keyboard */,
 				4C830A441CB5A796009C0C74 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +124,7 @@
 				4C830A431CB5A796009C0C74 /* KeyQuotes.app */,
 				4C830A571CB5A796009C0C74 /* KeyQuotesTests.xctest */,
 				4C830A621CB5A797009C0C74 /* KeyQuotesUITests.xctest */,
+				4C830A781CB5AACE009C0C74 /* KeyQuotes Keyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,6 +160,15 @@
 			path = KeyQuotesUITests;
 			sourceTree = "<group>";
 		};
+		4C830A791CB5AACE009C0C74 /* KeyQuotes Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				4C830A7A1CB5AACE009C0C74 /* KeyboardViewController.swift */,
+				4C830A7C1CB5AACE009C0C74 /* Info.plist */,
+			);
+			path = "KeyQuotes Keyboard";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,10 +179,12 @@
 				4C830A3F1CB5A796009C0C74 /* Sources */,
 				4C830A401CB5A796009C0C74 /* Frameworks */,
 				4C830A411CB5A796009C0C74 /* Resources */,
+				4C830A831CB5AACE009C0C74 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				4C830A7E1CB5AACE009C0C74 /* PBXTargetDependency */,
 			);
 			name = KeyQuotes;
 			productName = KeyQuotes;
@@ -181,6 +227,23 @@
 			productReference = 4C830A621CB5A797009C0C74 /* KeyQuotesUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		4C830A771CB5AACE009C0C74 /* KeyQuotes Keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4C830A801CB5AACE009C0C74 /* Build configuration list for PBXNativeTarget "KeyQuotes Keyboard" */;
+			buildPhases = (
+				4C830A741CB5AACE009C0C74 /* Sources */,
+				4C830A751CB5AACE009C0C74 /* Frameworks */,
+				4C830A761CB5AACE009C0C74 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "KeyQuotes Keyboard";
+			productName = "KeyQuotes Keyboard";
+			productReference = 4C830A781CB5AACE009C0C74 /* KeyQuotes Keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -202,6 +265,9 @@
 						CreatedOnToolsVersion = 7.3;
 						TestTargetID = 4C830A421CB5A796009C0C74;
 					};
+					4C830A771CB5AACE009C0C74 = {
+						CreatedOnToolsVersion = 7.3;
+					};
 				};
 			};
 			buildConfigurationList = 4C830A3E1CB5A796009C0C74 /* Build configuration list for PBXProject "KeyQuotes" */;
@@ -220,6 +286,7 @@
 				4C830A421CB5A796009C0C74 /* KeyQuotes */,
 				4C830A561CB5A796009C0C74 /* KeyQuotesTests */,
 				4C830A611CB5A797009C0C74 /* KeyQuotesUITests */,
+				4C830A771CB5AACE009C0C74 /* KeyQuotes Keyboard */,
 			);
 		};
 /* End PBXProject section */
@@ -243,6 +310,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4C830A601CB5A797009C0C74 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4C830A761CB5AACE009C0C74 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -277,6 +351,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4C830A741CB5AACE009C0C74 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C830A7B1CB5AACE009C0C74 /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,6 +371,11 @@
 			isa = PBXTargetDependency;
 			target = 4C830A421CB5A796009C0C74 /* KeyQuotes */;
 			targetProxy = 4C830A631CB5A797009C0C74 /* PBXContainerItemProxy */;
+		};
+		4C830A7E1CB5AACE009C0C74 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4C830A771CB5AACE009C0C74 /* KeyQuotes Keyboard */;
+			targetProxy = 4C830A7D1CB5AACE009C0C74 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -349,7 +436,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -388,7 +475,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -399,6 +486,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = KeyQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.KeyQuotes;
@@ -410,6 +498,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = KeyQuotes/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.jessicajoseph.KeyQuotes;
@@ -463,6 +552,30 @@
 			};
 			name = Release;
 		};
+		4C830A811CB5AACE009C0C74 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KeyQuotes Keyboard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.jessicajoseph.KeyQuotes.KeyQuotes-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4C830A821CB5AACE009C0C74 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "KeyQuotes Keyboard/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "co.jessicajoseph.KeyQuotes.KeyQuotes-Keyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -496,6 +609,14 @@
 			buildConfigurations = (
 				4C830A721CB5A797009C0C74 /* Debug */,
 				4C830A731CB5A797009C0C74 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		4C830A801CB5AACE009C0C74 /* Build configuration list for PBXNativeTarget "KeyQuotes Keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4C830A811CB5AACE009C0C74 /* Debug */,
+				4C830A821CB5AACE009C0C74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
